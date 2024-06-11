@@ -1,0 +1,20 @@
+.alert-add{
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: white;
+  border-radius: 10px;
+  width: 230px;
+}
+.alert-add > .container{
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.alert-add > .container > p{
+  font-size: 15px;
+  margin: 0;
+}

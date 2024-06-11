@@ -1,38 +1,42 @@
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* adding css for navigation animation */
+.nav-link {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #031D44;
+  padding: 20px 0px;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link:hover {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 9px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link-ltr:hover::before {
+  width: 82%;
+}
+/* navigation css ends here */
+/* delete icon css  */
+.delete-icon{
+  cursor: pointer;
 }

@@ -1,0 +1,7 @@
+.product-detail img{
+  height: 350px;
+  object-fit: contain;
+}
+.product-detail button{
+  text-transform: uppercase;
+}

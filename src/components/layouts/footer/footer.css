@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.logo-text span {
+    color: #0d6efd;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.contact span {
+    display: block;
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Add styles for the quick links section */
+.footer-section.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-section.links a {
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-section.links a:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    border-color: #0d6efd;
+}
+
+/* Add styles for the subscription section */
+.footer-section.subscribe p {
+    margin-bottom: 10px;
+}
+
+.footer-section.subscribe form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section.subscribe input[type="email"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.footer-section.subscribe button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0d6efd;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section.subscribe button:hover {
+    background-color: #0b5ed7;
+}

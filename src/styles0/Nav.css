@@ -1,0 +1,83 @@
+header .navbar{
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 8px 2%;
+  height: 50px;
+}
+header .navbar h2 {
+  text-transform: uppercase;
+  color: #0d6efd;
+  justify-self: flex-start;
+}
+header .navbar .search {
+  display: flex;
+  justify-self: center;
+  gap: 5px;
+}
+header .navbar .search input[type="text"] {
+  max-width: 20vw;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+header .navbar .search input[type="submit"] {
+  border: 1px solid #0d6efd;
+  border-radius: 5px;
+  color: #0d6efd;
+  background: none;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 5px 8px;
+}
+header .navbar .search input[type="submit"]:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+header .navbar nav{
+  justify-self: flex-end;
+}
+header .navbar nav a button {
+  margin-left: 7px;
+  border: 1px solid black;
+  background: none;
+  border-radius: 5px;
+  padding: 4px 6px;
+  text-decoration: none;
+  color: #555555;
+}
+header .navbar nav a button:hover{
+  color: #fff;
+  background-color: #0d6efd;
+}
+header .sub-navbar nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 30px;
+  margin-bottom: 5px;
+
+}
+header .sub-navbar nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .sub-navbar nav a:hover{
+  text-decoration: underline;
+}
+header .sub-navbar nav .active{
+  text-decoration: underline;
+}
+header .navbar .dropdown{
+  display: none;
+}
+@media screen and (max-width: 800px){
+  header .navbar nav{
+  display: none;
+  }
+  header .navbar .dropdown{
+    display: block;
+  }
+}
